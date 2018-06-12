@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#616161</color>
+    <color name="colorPrimaryDark">#424242</color>
+    <color name="colorAccent">#9E9E9E</color>
+    <color name="colorOverflowDivider">#BDBDBD</color>
+
+    <color name="custom_slide_background">#546E7A</color>
+    <color name="custom_slide_buttons">#263238</color>
+
+    <color name="second_slide_background">#607D8B</color>
+    <color name="second_slide_buttons">#37474F</color>
+
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/title_activities">
+            <menu>
+                <item
+                    android:id="@+id/navigation_item_2"
+                    android:visible="false"
+                    android:title="@string/title_spacing" />
+                <item
+                    android:id="@+id/navigation_item_3"
+                    android:icon="@drawable/snowflake"
+                    android:title="@string/title_home_activity" />
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="@string/title_actions">
+        <menu>
+
+            <item
+                android:id="@+id/close"
+                android:icon="@drawable/close"
+                android:title="@string/title_close_app" />
+
+        </menu>
+    </item>
+
+
+
+</menu>

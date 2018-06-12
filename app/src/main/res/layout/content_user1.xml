@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424242"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/firstcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BDBDBD"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingStart="10dp"
+                android:paddingTop="15dp"
+                android:text="Weather"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_below="@+id/main"
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-light"
+                android:padding="5dp"
+                android:paddingStart="10dp"
+                android:text="condition"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FAFAFA"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:elevation="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/snowflake" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/secondcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/firstcard"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        app:cardElevation="7dp"
+        app:cardUseCompatPadding="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9E9E9E"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingStart="10dp"
+                android:paddingTop="15dp"
+                android:text="Degree"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_below="@+id/temp"
+                android:id="@+id/humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-light"
+                android:padding="5dp"
+                android:paddingStart="10dp"
+                android:text="per cent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FAFAFA"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:elevation="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/snowflake" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/thirdcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondcard"
+        android:layout_marginTop="0dp"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        app:cardElevation="6dp"
+        app:cardUseCompatPadding="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#757575"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingStart="10dp"
+                android:paddingTop="15dp"
+                android:text="Minimum"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_below="@+id/min"
+                android:id="@+id/max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-light"
+                android:padding="5dp"
+                android:paddingStart="10dp"
+                android:text="Maximum"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FAFAFA"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:elevation="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/snowflake" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/forthcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thirdcard"
+        android:layout_marginTop="0dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#616161"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingStart="10dp"
+                android:paddingTop="15dp"
+                android:text="Wind"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:elevation="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/snowflake" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fifthcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forthcard"
+        android:layout_marginTop="0dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#424242"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingStart="10dp"
+                android:paddingTop="15dp"
+                android:text="Location"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_below="@+id/name"
+                android:id="@+id/country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-light"
+                android:padding="5dp"
+                android:paddingStart="10dp"
+                android:text="Country"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FAFAFA"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/image5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:elevation="15dp"
+                android:layout_marginEnd="20dp"
+                app:srcCompat="@drawable/snowflake" />
+
+            <RelativeLayout
+                android:id="@+id/RelSunRise"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:paddingRight="15dp"
+                android:layout_below="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:elevation="15dp"
+                    app:srcCompat="@drawable/snowflake" />
+
+                <TextView
+                    android:id="@+id/sunrise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image6"
+                    android:fontFamily="sans-serif-light"
+                    android:padding="5dp"
+                    android:text="sunrise"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FAFAFA"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_toEndOf="@+id/image6"
+                    android:id="@+id/image7"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="70dp"
+                    app:srcCompat="@drawable/snowflake" />
+
+                <TextView
+                    android:id="@+id/sunset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image7"
+                    android:layout_toEndOf="@+id/sunrise"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="sans-serif-light"
+                    android:padding="5dp"
+                    android:text="sunset"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FAFAFA"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_toEndOf="@+id/RelSunRise"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+        </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
+

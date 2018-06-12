@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="prompt_username">User Name</string>
+    <string name="error_message">Please enter your user name.</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_home_activity">Home</string>
+    <string name="title_spacing">For Spacing</string>
+    <string name="title_close_app">Close</string>
+    <string name="title_app_settings">Settings</string>
+    <string name="title_app_help">Help</string>
+    <string name="title_actions">ACTIONS</string>
+    <string name="title_activities">ACTIVITIES</string>
+    <string name="title_sync">SYNC</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">NEXT</string>
+</resources>
