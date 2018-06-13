@@ -400,6 +400,13 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
     }
 
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finishAffinity();
+    }
+
     private String UnixTime(long timex) {
 
         Date date = new Date(timex *1000L);
